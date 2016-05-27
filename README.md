@@ -1,19 +1,19 @@
-android ÏµÍ³6.0Ö®ºóµÄÈ¨ÏÞÐèÒªÉêÇë£¬Õâ¸ö·â×°µÄºÜºÃ£¬ÏêÏ¸µÄ½²½âÁË4¸ö²½Öè£º
- //1---1.Èç¹ûÈ¨ÏÞÉêÇë³É¹¦¾Í×ßÕâÀï£¬Í¬Ê±Ò²ÊÇ²Ù×÷ÕâÀïµÄÊ±ºòÇëÇóµÄ
+  android ç³»ç»Ÿ6.0ä¹‹åŽçš„æƒé™éœ€è¦ç”³è¯·ï¼Œè¿™ä¸ªå°è£…çš„å¾ˆå¥½ï¼Œè¯¦ç»†çš„è®²è§£äº†4ä¸ªæ­¥éª¤ï¼š
+    //1---1.å¦‚æžœæƒé™ç”³è¯·æˆåŠŸå°±èµ°è¿™é‡Œï¼ŒåŒæ—¶ä¹Ÿæ˜¯æ“ä½œè¿™é‡Œçš„æ—¶å€™è¯·æ±‚çš„
     private void showCamera() {
-        show("11---Ïà»úÓÐÁËÈ¨ÏÞÁË");
+        show("11---ç›¸æœºæœ‰äº†æƒé™äº†");
     }
-    //3.¾Ü¾øÖ®ºóµ÷ÓÃ£º£¨Ð¡Ã×µÄÖ±½Ó×ßÕâÀï²»×ßµÚ2²½£¬»ªÎªµÄ¿ÉÒÔÏÈ×ß2£¬£©
-    private void onCameraDenied() {
-        show("33Ïà»úÆô¶¯Ê§°Ü");
-    }
-    //4.¾Ü¾øÖ®ºó£¬ÔÙ´ÎÇëÇó£¬Ð¡Ã×²»»áµ÷ÓÃÕâÀï£¬»ªÎª¿ÉÒÔ×ßÕâÀï
-    private void onCameraNeverAskAgain() {
-        show("44Ïà»úÔÙ´ÎÇëÇó£¬µ¯³ö¶Ô»°¿ò");
-    }
-    //2.2.¾Ü¾øÖ®ºó£¬ÔÙ´ÎÇëÇó£¬Ð¡Ã×²»»áµ÷ÓÃÕâÀï£¬»ªÎª¿ÉÒÔ×ßÕâÀï£¬ÕâÊÇµ¯³öÒ»¸öµ¯´°£¬È»ºó¿ÉÒÔÔÊÐí£¬ÔÊÐíÖ®ºó¾ÍÔÙ´ÎÌø³öÏµÍ³µÄÇëÇóÈ¨ÏÞµÄ¶Ô»°¿ò
+    //2.2.æ‹’ç»ä¹‹åŽï¼Œå†æ¬¡è¯·æ±‚ï¼Œå°ç±³ä¸ä¼šè°ƒç”¨è¿™é‡Œï¼ŒåŽä¸ºå¯ä»¥èµ°è¿™é‡Œï¼Œè¿™æ˜¯å¼¹å‡ºä¸€ä¸ªå¼¹çª—ï¼Œç„¶åŽå¯ä»¥å…è®¸ï¼Œå…è®¸ä¹‹åŽå°±å†æ¬¡è·³å‡ºç³»ç»Ÿçš„è¯·æ±‚æƒé™çš„å¯¹è¯æ¡†
     private void showRationaleForCamera(PermissionRequest request) {
-        //2.¾Ü¾øÖ®ºó£¬ÔÙ´ÎÇëÇó£¬Ð¡Ã×²»»áµ÷ÓÃÕâÀï£¬»ªÎª¿ÉÒÔ×ßÕâÀï£¬ÕâÊÇµ¯³öÒ»¸öµ¯´°£¬È»ºó¿ÉÒÔÔÊÐí£¬ÔÊÐíÖ®ºó¾ÍÔÙ´ÎÌø³öÏµÍ³µÄÇëÇóÈ¨ÏÞµÄ¶Ô»°¿ò
         showRationaleDialog(R.string.requset_camear, request);
-        show("22====Ïà»úÇëÇóÈ¨ÏÞ¶Ô»°¿ò");
+        show("22====ç›¸æœºè¯·æ±‚æƒé™å¯¹è¯æ¡†");
     }
+    //3.æ‹’ç»ä¹‹åŽè°ƒç”¨ï¼šï¼ˆå°ç±³çš„ç›´æŽ¥èµ°è¿™é‡Œä¸èµ°ç¬¬2æ­¥ï¼ŒåŽä¸ºçš„å¯ä»¥å…ˆèµ°2ï¼Œï¼‰
+    private void onCameraDenied() {
+        show("33ç›¸æœºå¯åŠ¨å¤±è´¥");
+    }
+    //4.æ‹’ç»ä¹‹åŽï¼Œå†æ¬¡è¯·æ±‚ï¼Œå°ç±³ä¸ä¼šè°ƒç”¨è¿™é‡Œï¼ŒåŽä¸ºå¯ä»¥èµ°è¿™é‡Œ
+    private void onCameraNeverAskAgain() {
+        show("44ç›¸æœºå†æ¬¡è¯·æ±‚ï¼Œå¼¹å‡ºå¯¹è¯æ¡†");
+    }
+    
