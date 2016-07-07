@@ -1,4 +1,5 @@
   （声明：本文基于https://github.com/hotchemi/PermissionsDispatcher源码进行修改的，谢谢原创者）
+  
   android 系统6.0之后的权限需要申请，这个封装的很好，详细的讲解了4个步骤：
    
    
