@@ -1,3 +1,4 @@
+  （声明：本文基于https://github.com/hotchemi/PermissionsDispatcher源码进行修改的，谢谢原创者）
   android 系统6.0之后的权限需要申请，这个封装的很好，详细的讲解了4个步骤：
    
    
@@ -7,7 +8,8 @@
     }
     
     
-    //2.2.拒绝之后，再次请求，小米不会调用这里，华为可以走这里，这是弹出一个弹窗，然后可以允许，允许之后就再次跳出系统的请求权限的对话框
+    //2.2.拒绝之后，再次请求，小米不会调用这里，华为可以走这里，这是弹出一个弹窗，然后可以允许，
+    允许之后就再次跳出系统的请求权限的对话框
     private void showRationaleForCamera(PermissionRequest request) {
         showRationaleDialog(R.string.requset_camear, request);
         show("22====相机请求权限对话框");
