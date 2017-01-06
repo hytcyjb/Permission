@@ -28,6 +28,7 @@ import java.lang.ref.WeakReference;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     /****
      * 分4个步骤
+	 * 详细分解，说明
      * 2016年5月24日12:52:09
      * yjbo
      */
